@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etalase Toko</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-menu">
+      <div class="div">
+        <div class="overlap">
+          <div class="content">
+            <div class="heading-desc">
+              <div class="text-wrapper">Kelola Etalase Anda</div>
+              <p class="selamat-datang-di">
+                Selamat datang di laman etalase anda, anda dapat menambahkan atau <br />mengedit etalase anda disini
+                dengan memilih barang terlebih dahulu
+              </p>
+            </div>
+          </div>
+          <div class="rectangle"></div>
+          <div class="nav-bar-atas">
+            <div class="settings">
+              <div class="rectangle-2"></div>
+              <div class="rectangle-3"></div>
+              <div class="rectangle-4"></div>
+            </div>
+            <div class="profile">
+              <img class="vuesax-bold-profile" src="img/profile-circle.svg" />
+              <div class="text-wrapper-2">Etalase</div>
+            </div>
+            <div class="logo">
+              <img class="open-doodles" src="img/open-doodles-unboxing.png" />
+              <div class="text-wrapper-3">UNBOX</div>
+            </div>
+          </div>
+          <div class="frame">
+            <div class="frame-2">
+              <label for="kode-barang" class="text-wrapper-4">Kode Barang</label>
+              <input type="text" id="kode-barang" class="rectangle-5" required>
+            </div>
+            <div class="frame-2">
+              <label for="nama-barang" class="text-wrapper-4">Nama Barang</label>
+              <input type="text" id="nama-barang" class="rectangle-5" required>
+            </div>
+            <div class="frame-2">
+              <label for="tahun-dibuat" class="text-wrapper-4">Tahun Dibuat</label>
+              <input type="text" id="tahun-dibuat" class="rectangle-5" required>
+            </div>
+            <div class="frame-2">
+              <label for="kategori" class="text-wrapper-4">Kategori</label>
+              <select id="kategori" class="rectangle-5" required>
+                <option value="Fashion">Fashion</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Accesoris">Accesoris</option>
+              </select>
+            </div>
+            <div class="frame-2">
+              <label for="model-barang" class="text-wrapper-4">Model Barang</label>
+              <input type="text" id="model-barang" class="rectangle-5" required>
+            </div>
+            <div class="frame-2">
+              <label for="jumlah-barang" class="text-wrapper-4">Jumlah Barang</label>
+              <input type="text" id="jumlah-barang" class="rectangle-5" required>
+            </div>
+            <div class="frame-2">
+              <label for="harga-barang" class="text-wrapper-4">Harga Barang</label>
+              <input type="text" id="harga-barang" class="rectangle-5" required>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="tambah-barang" onclick="prosesInputan()">
+          <img class="vuesax-bold-add" src="img/add-circle.svg" />
+          <div class="text-wrapper-6">Tambah Barang</div>
+        </button>
+        <div class="search-filter-wrapper">
+            <div class="search-filter">
+              <div class="container-input">
+                <input type="text" id="search-barang" class="search-datasets" placeholder="Cari Barang">
+                <svg class="vuesax-bold-search" src="img/search-status.svg" />
+              </div>
+            </div>
+        </div>
+        <div class="overlap-group">
+          <div class="table">
+            <table id="table-barang" class="table-2">
+              <thead>
+                <tr style="display: flex;">
+                  <th class="cell">
+                    <div class="div-wrapper"><div class="text">Kode</div></div>
+                  </th>
+                  <th class="cell">
+                    <div class="div-wrapper"><div class="text">Nama Barang</div></div>
+                  </th>
+                  <th class="cell">
+                    <div class="div-wrapper"><div class="text">Dibuat</div></div>
+                  </th>
+                  <th class="cell">
+                    <div class="div-wrapper"><div class="text">Kategori</div></div>
+                  </th>
+                  <th class="cell">
+                    <div class="div-wrapper"><div class="text">Model</div></div>
+                  </th>
+                  <th class="cell">
+                    <div class="div-wrapper"><div class="text">Jumlah</div></div>
+                  </th>
+                  <th class="cell">
+                    <div class="div-wrapper"><div class="text">Harga</div></div>
+                  </th>
+                  <th class="cell">
+                    <div class="div-wrapper"><div class="text">ACT</div></div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="bodytable-barang">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" ></script>
+  </body>
+</html>
